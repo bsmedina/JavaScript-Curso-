@@ -16,9 +16,17 @@ tdImc.textContent = imc; // Para reescrever o resultado da conta do IMC na tabel
 
 /********** Seleção e cálculo de IMC para o 2º paciente da tabela **********/
 
+var paciente2 = document.querySelector('#segundo-paciente');
 
+var Peso2 = paciente2.querySelector('.info-peso2').textContent; // Maneira reduzida de fazer o passo acima (Já estou acessando um elemento pré selecionado);
+var Altura2 = paciente2.querySelector('.info-altura2').textContent;
 
-console.log(paciente)
-console.log(peso);
-console.log(altura);
-console.log(imc);
+var tdImc2 = document.querySelector('.info-imc2');
+var imc2 = (Peso2 / (Altura2 * Altura2));
+
+tdImc2.textContent = imc2;
+
+console.log(Peso2);
+// console.log(peso);
+// console.log(altura);
+// console.log(imc);
